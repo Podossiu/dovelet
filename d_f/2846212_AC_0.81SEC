@@ -1,0 +1,3 @@
+import math
+a = float(raw_input())
+print "%d %.2lf" %(math.floor(a), a-math.floor(a))

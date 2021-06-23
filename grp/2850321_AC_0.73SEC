@@ -1,0 +1,8 @@
+n, k = map(int, raw_input().split())
+total = (k+1)*k/2
+count = 0
+for i in range(n-k+1):
+    if (total % 15 == 0):
+        count +=1
+    total += k
+print count

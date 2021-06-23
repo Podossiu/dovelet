@@ -1,0 +1,8 @@
+n = int(raw_input())
+array = list(map(int,raw_input().split()))
+avg=sum(array)/n
+move = 0
+for i in range(0,n):
+    if array[i] > avg:
+        move +=array[i]-avg
+print("The minimum number of moves is %d."%move)

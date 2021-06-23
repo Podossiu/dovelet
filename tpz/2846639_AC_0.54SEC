@@ -1,0 +1,7 @@
+b = int(raw_input())
+a = list(map(int,raw_input().split()))
+a.sort()
+l = sum(a) - 2*b
+if(l < 0):
+    l = 0
+print a[0], l

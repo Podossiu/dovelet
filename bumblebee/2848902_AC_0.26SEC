@@ -1,0 +1,2 @@
+a,b,c,d = map(int,raw_input().split())
+print "%.6lf" %(d/float(a+b)*c)

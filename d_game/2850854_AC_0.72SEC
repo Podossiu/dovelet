@@ -1,0 +1,30 @@
+n= int(raw_input())
+total = 0
+for i in range(n):
+    check = 0
+    prize = 0
+    a = [0 for i in range(7)]
+    b,c,d = map(int, raw_input().split())
+    a[b] += 1
+    if a[c] != 0:
+        check = c
+    a[c] += 1
+    if a[d] != 0:
+        check = d
+    a[d] += 1
+    if( check != 0 ):
+        if ( a[check] == 2 ):
+            prize += 1000+check*100
+        else:
+            prize += 10000 + check * 1000
+    else :
+        max_1 = 0
+        for i in range(7):
+            if a[i] == 1:
+                max_1 = i
+        prize += 100*max_1
+    if total < prize:
+        total = prize
+print total
+    
+        

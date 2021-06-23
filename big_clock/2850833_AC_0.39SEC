@@ -1,0 +1,8 @@
+a,b = map(int,raw_input().split(':'))
+if b != 0 :
+    print 0
+else :
+    if a <= 12:
+        print a+12
+    else :
+        print a-12

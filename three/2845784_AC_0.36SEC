@@ -1,0 +1,7 @@
+a= int(raw_input())
+b= int(raw_input())
+third = a * (b % 10)
+fourth = a * ((b % 100)/10)
+fifth = a * (b / 100)
+
+print "%d\n%d\n%d\n%d" %(third, fourth, fifth, third+fourth*10+fifth*100)

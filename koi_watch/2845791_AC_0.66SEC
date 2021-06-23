@@ -1,0 +1,14 @@
+current = list(map(int,raw_input().split()))
+cook = int(raw_input())
+current[0] += (cook)/3600
+current[1] += (cook%3600)/60
+current[2] += (cook%60)
+if(current[2] >= 60):
+    current[1] += current[2]/60
+    current[2] %= 60
+if(current[1] >= 60):
+    current[0] += current[1]/60
+    current[1] %= 60
+if(current[0] >= 24):
+    current[0] %= 24
+print ("%d %d %d" %(current[0], current[1], current[2]))

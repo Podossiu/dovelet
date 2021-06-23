@@ -1,0 +1,2 @@
+a,b,c,d= map(int,raw_input().split())
+print (a==c) and (((d==b) and "many") or "none") or "%.3lf" %((b-d)/(float)(c-a))

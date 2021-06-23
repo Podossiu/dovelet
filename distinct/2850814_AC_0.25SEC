@@ -1,0 +1,9 @@
+hash_t = [0 for i in range(10001)]
+n = int(raw_input())
+a = list(map(int, raw_input().split()))
+count = 0
+for i in range(n):
+    if hash_t[a[i]] == 0:
+        hash_t[a[i]] = 1
+        count += 1
+print count

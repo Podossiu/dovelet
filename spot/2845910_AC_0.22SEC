@@ -1,0 +1,4 @@
+d = float(raw_input())
+p = float(raw_input())
+p = p/100 + 1
+print "%.3lf" %(d-(p*d))

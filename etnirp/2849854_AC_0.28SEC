@@ -1,0 +1,7 @@
+import sys
+a = int(raw_input())
+for i in range(a):
+    if( i == 0 or i == a-1 or i == a/2):
+        print '*'*a
+    else :
+        print ' '*(a-1)+'*'

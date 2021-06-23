@@ -1,0 +1,4 @@
+b = int(raw_input())
+a = list(map(int,raw_input().split()))
+a.sort()
+print "%d %d" %(a[0], 0 if (b-a[2]) > a[1] else (0 if b-a[0] > a[2]+a[1]-b else a[2]+a[1]+a[0]-2*b)) 

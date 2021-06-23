@@ -1,0 +1,9 @@
+a, b = raw_input().split()
+a = int(a)
+b = int(b)
+a ^= b
+b ^= a
+a ^= b
+print "%d+%d=%d\n%d-%d=%d\n%d*%d=%d\n%d/%d=%d\n%d%%%d=%d" %(a,b,a+b,a,b,a-b\
+                                                            ,a,b,a*b,a,b,a/b\
+                                                            ,a,b,a%b)

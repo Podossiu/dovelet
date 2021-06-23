@@ -1,0 +1,5 @@
+a,b,c = map(int,raw_input().split())
+temp = a
+a += a*(b/100.)
+a -= a*(c/100.)
+print "loss" if a - temp < 0 else "%.0lf" %(a - temp)

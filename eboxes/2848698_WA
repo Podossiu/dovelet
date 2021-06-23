@@ -1,0 +1,2 @@
+a,b,c,d = map(int, raw_input().split())
+print d/b+d+1

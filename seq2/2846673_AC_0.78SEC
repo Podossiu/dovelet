@@ -1,0 +1,4 @@
+b = 0
+for i in range(int(raw_input())):
+    b+= (i+1)
+    print "1..%d %d" %(i+1,b)

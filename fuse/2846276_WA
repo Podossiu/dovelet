@@ -1,0 +1,4 @@
+import math
+a,b,c = map(int,raw_input().split())
+count = (a*5+b*4+c*1)
+print(count+9)/10*10

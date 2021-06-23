@@ -1,0 +1,5 @@
+a,b = map(int, raw_input().split())
+if (b % a == 0 or a != 0):
+    print "%d | %d" %(a,b)
+else :
+    print "%d !| %d" %(a,b)

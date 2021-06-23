@@ -1,0 +1,7 @@
+import sys
+a,b = map(int, raw_input().split())
+while (a != 0):
+    sys.stdout.write("%d " %(b/a))
+    i = b - b/a*a
+    b = a
+    a = i

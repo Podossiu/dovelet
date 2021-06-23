@@ -1,0 +1,13 @@
+import sys
+a = [10, 15, 30, 40 ,45]
+b = list(map(int, raw_input().split()))
+if (sum(b)>10):
+    print "time out"
+    sys.exit()
+total = 0
+for i in range(0,5):
+    total += a[i]*b[i]
+if total >= 100:
+    print "you win"
+else :
+    print "game over"

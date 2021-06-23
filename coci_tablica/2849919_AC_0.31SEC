@@ -1,0 +1,4 @@
+a,b = map(int,raw_input().split())
+c,d = map(int,raw_input().split())
+table = {a/c + b/d:0,c/d + a/b:1,d/b+c/a:2,b/a+d/c:3}
+print(table[max(a/c+b/d,c/d+a/b,d/b+c/a,b/a+d/c)])

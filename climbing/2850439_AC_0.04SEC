@@ -1,0 +1,11 @@
+import sys
+import math
+while(1):
+    n,u,d = map(int, raw_input().split())
+    count = 0
+    if (n == 0):
+        break
+    while(n - u > 0):
+        n= n -u +d
+        count += 2
+    print count+1

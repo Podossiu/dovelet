@@ -1,0 +1,4 @@
+n,m = map(int,raw_input().split()
+a = n/m
+          
+print a*(a+1)/2

@@ -1,0 +1,2 @@
+a = int(raw_input())
+print (a+2)/2 if a<=5 else (12-a)/2 

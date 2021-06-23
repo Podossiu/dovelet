@@ -1,0 +1,12 @@
+import sys
+mat = []
+for i in range(5):
+    a = list(map(int,raw_input().split()))
+    mat.append(a)
+for i in range(5):
+    if (2 * abs(mat[i][i]) >= sum(map(abs,mat[i]))):
+        print "no"
+        sys.exit()
+print "yes"
+        
+        

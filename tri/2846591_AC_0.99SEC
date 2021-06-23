@@ -1,0 +1,14 @@
+a,b,c = map(int, raw_input().split())
+if (a>b):
+    a^=b
+    b^=a
+    a^=b
+if (b>c):
+    b^=c
+    c^=b
+    b^=c
+if (a>b):
+    a^=b
+    b^=a
+    a^=b
+print "%s" %("yes" if (a+b)>c else "no")

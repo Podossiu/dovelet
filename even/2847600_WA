@@ -1,0 +1,7 @@
+import math
+a,b = map(int,raw_input().split())
+total = 0
+for i in range(a,b+1):
+    if (int(math.sqrt(i))**2 != i):
+        total+= 1
+print total

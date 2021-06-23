@@ -1,0 +1,7 @@
+import sys
+a,b,c = map(int,raw_input().split())
+sys.stdout.write("0.")
+a = a*10
+for i in range(c):
+    sys.stdout.write("%d" %(a/b))
+    a = (a - b*(a/b))*10

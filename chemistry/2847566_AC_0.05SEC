@@ -1,0 +1,7 @@
+a = float(raw_input())
+while(a != 999):
+    b = float(raw_input())
+    if b == 999: break;
+    print "%.2lf" %(b-a)
+    a = b
+print "End of Output"

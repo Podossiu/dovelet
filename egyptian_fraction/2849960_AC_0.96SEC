@@ -1,0 +1,16 @@
+a,b = map(int,raw_input().split())
+
+array = []
+count = 0
+c=2
+while(1):
+    if a*c>=b:
+        array.append("1/%d" %c)
+        if b%a==0:
+            break
+        a = a*c-b
+        b = b*c
+        count +=1
+    c+=1    
+for i in range(0,count+1):
+    print("%s"%array[i])

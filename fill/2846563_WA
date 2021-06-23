@@ -1,0 +1,9 @@
+a,b,c= map(float,raw_input().split())
+if(a<=4.5 and b >= 150 and c >= 200):
+    print "Wide Receiver"
+elif (a<=6.0 and b>=300 and c>=500):
+    print "Lineman"
+elif (a<=5.0 and b>=200 and c>=300):
+    print "Quarterback"
+else :
+    print "No position"

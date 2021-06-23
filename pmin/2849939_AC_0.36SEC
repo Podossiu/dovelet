@@ -1,0 +1,7 @@
+import sys
+n = int(raw_input())
+a = list(map(int, raw_input().split()))
+m = min(a)
+for i in range(n):
+    if (a[i] == m):
+        sys.stdout.write("%d "%(i+1))

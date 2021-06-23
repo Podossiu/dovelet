@@ -1,0 +1,10 @@
+import sys
+a = list(map(int,raw_input().split()))
+for i in range(6):
+    if i == 0 or i == 1:
+        a[i] = 1- a[i]
+    elif i == 2 or i ==3 or i==4:
+        a[i] = 2 - a[i]
+    else :
+        a[i] = 8 - a[i]
+    sys.stdout.write("%d " %(a[i]))

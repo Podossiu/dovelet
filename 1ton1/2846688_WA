@@ -1,0 +1,8 @@
+import sys
+tot = 0
+for i in range(int(raw_input())-1):
+    tot += (i+1)
+    sys.stdout.write("%d+"%(i+1))
+print "%d=%d" %(i+2, tot+i+2)
+    
+    

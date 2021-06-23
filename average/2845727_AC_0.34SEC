@@ -1,0 +1,2 @@
+a= eval(raw_input().replace(' ','+'))
+print ("%.2lf" %(a/4.0))

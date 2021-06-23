@@ -1,0 +1,7 @@
+a = int(raw_input())
+total = (a-1)*a/2
+while( 1 ):
+    a+= 1
+    total -= a
+    if total <= 0 : break
+print "%s" %("O" if total == 0 else "X")

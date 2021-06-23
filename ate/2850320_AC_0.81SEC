@@ -1,0 +1,5 @@
+a = int(raw_input())
+if a > 198:
+    print 0
+else :
+    print 199 - a

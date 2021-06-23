@@ -1,0 +1,18 @@
+import sys
+histo = [[" "]*30 for i in range(10)]
+a = list(map(int, raw_input().split()))
+b = [["1","2"]]
+b[0][0] = '3'
+num = 0
+while(1):
+    temp = a[num]
+    if a[num] == 0:
+        break
+    histo[9][num] = str(a[num])
+    for i in range(a[num]):
+        histo[8-i][num] = '*'
+    num += 1
+for i in range(10):
+    for j in range(num):
+        sys.stdout.write(" %s" %(histo[i][j]))
+    print ''

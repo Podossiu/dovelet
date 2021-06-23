@@ -1,0 +1,5 @@
+x, y =raw_input().split()
+x = int(x)
+y = float(y)
+print "%.2lf" %( (y - x - 0.5)if(x % 5 == 0 and x < y) else y)
+    

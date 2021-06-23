@@ -1,0 +1,10 @@
+n = int(raw_input())
+a = list(map(int,raw_input().split()))
+b = []
+b.append(0)
+for i in range(n):
+    b.append(sum(a[:i+1]))
+q = int(raw_input())
+for i in range(q):
+    s,e = map(int, raw_input().split())
+    print b[e] - b[s-1]

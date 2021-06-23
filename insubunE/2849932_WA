@@ -1,0 +1,9 @@
+a,b = map(int,raw_input().split())
+c= 0
+for i in range(0,a/2):
+    if i*(a-i)==b:
+        print("(x-%d)(x-%d)" %(i,a-i))
+        c=1
+        break
+if(c==0):
+    print("impossible")

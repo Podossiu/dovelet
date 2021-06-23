@@ -1,0 +1,14 @@
+hash_t = [0 for i in range(100)]
+a = list(map(int, raw_input().split()))
+count = 0
+num = 0
+while(1):
+    temp = a[num]
+    if temp == 0:
+        break
+    hash_t[temp] = 1
+    num += 1
+for i in range(50):
+    if (hash_t[i] == 1 and hash_t[2*i] == 1):
+        count +=1
+print count

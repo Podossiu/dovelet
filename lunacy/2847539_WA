@@ -1,0 +1,4 @@
+a = float(raw_input())
+while(a>0):
+    print "Objects weighing %.2lf on Earth will weight %.2lf on the moon" %(a, a*0.167)
+    a = float(raw_input())

@@ -1,0 +1,14 @@
+a = []
+for i in range(9):
+    a.append(int(raw_input()))
+sum_a = sum(a)- 100
+for i in range(9):
+    for j in range(i+1,9):
+        if a[i] + a[j] == sum_a:
+            break;
+    if a[i] + a[j] == sum_a:
+        break;
+del a[i]
+del a[j-1]
+for i in range(7):
+    print a[i]

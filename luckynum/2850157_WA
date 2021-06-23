@@ -1,0 +1,14 @@
+k = int(raw_input())
+k +=1
+array=[]
+
+while(1):
+    if k==1:
+        break
+    if k%2 == 0:
+        array.append('4')
+    else:
+        array.append('7')
+    k /=2
+
+print("%d"%(int(''.join(array))))

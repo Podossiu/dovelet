@@ -1,0 +1,8 @@
+import math
+a= int(raw_input())
+total = 0
+for i in range(1,int(math.sqrt(a))):
+    total+= 2 if a % i == 0 else 0
+if (i+1) ** 2 == a:
+    total += 1
+print total

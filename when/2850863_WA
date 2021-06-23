@@ -1,0 +1,10 @@
+m,q = map(int,raw_input().split())
+check = [0 for i in range(101)]
+for i in range(m):
+    a = list(map(int,raw_input().split()))
+    for j in range(1,a[0]+1):
+        check[a[j]] += 1
+for i in range(101):
+    if (check[i] == max(check)) and max(check) >= q:
+        print i
+

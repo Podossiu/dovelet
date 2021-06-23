@@ -1,0 +1,10 @@
+for i in range(100,1000):
+    total = 0
+    temp = i
+    while(1):
+        total += (temp % 10)**3
+        temp /= 10
+        if (temp == 0):
+            break
+    if total == i:
+        print i

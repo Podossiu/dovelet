@@ -1,0 +1,6 @@
+for i in range(100,1000):
+    abc = i
+    cca = (abc % 10) * 100 + (abc % 10) *10 + abc / 100
+    total = 1000+ (abc/100) * 100 + ((abc/10)%10) * 10 + 2
+    if (abc+cca == total):
+        print abc

@@ -1,0 +1,12 @@
+a = list(map(int,raw_input().split()))
+third = 0
+second= 0
+first = 0
+for i in a:
+    if i/100 != 0 :
+        third += i
+    elif (i/10 !=0):
+        second += i
+    else :
+        first += i
+print "%d %d %d" %(first,second,third)

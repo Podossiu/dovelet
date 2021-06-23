@@ -1,0 +1,10 @@
+import sys
+max1 = -31
+max2 = -31
+a = list(map(int,raw_input().split()))
+for i in range(20):
+    if max1 <= a[i]:
+        max2 = max1
+        max1 = a[i]
+print max1+max2
+sys.stdout.write("%d %d" %(max1,max2))

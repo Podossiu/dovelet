@@ -1,0 +1,7 @@
+n = int(raw_input())
+a = list(map(int, raw_input().split()))
+total = 0
+average = sum(a)/float(n)
+for i in range(n):
+    total +=  (average - a[i])**2
+print "%.2lf" %(total/float(n))

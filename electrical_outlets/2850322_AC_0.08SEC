@@ -1,0 +1,4 @@
+n = int(raw_input())
+for i in range(n):
+    a = list(map(int,raw_input().split()))
+    print sum(a) - a[0]*2+1

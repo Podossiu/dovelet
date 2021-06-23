@@ -1,0 +1,2 @@
+a = raw_input()
+print("%s minutes is %d seconds." % (a,int(a)*60))

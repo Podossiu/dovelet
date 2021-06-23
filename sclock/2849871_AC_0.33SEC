@@ -1,0 +1,6 @@
+a = int(raw_input())
+for i in range (a/2):
+    print ' '*i+ '*'*(a-2*i-1) + '$'
+print ' '*(a/2)+'$'
+for i in range(a/2):
+    print ' '*(a/2 - i-1) + '$' + '*' * (2*i+2)

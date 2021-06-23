@@ -1,0 +1,8 @@
+n =int(raw_input())
+a = list(map(int, raw_input().split()))
+total = sum(a)/n
+count = 0
+for i in range(n):
+    if a[i] > total:
+        count += a[i] - total
+print "The minimum number of moves is %d." %(count)

@@ -1,0 +1,14 @@
+a = list(map(int,raw_input().split()))
+mat = [[0]*4 for i in range(3)]
+k = 0
+for i in range(3):
+    for j in range(4):
+        mat[i][j] = a[k]
+        k += 1
+        print mat[i][j],
+    print ''
+print ''
+for i in range(4):
+    for j in range(3):
+        print mat[j][i],
+    print ''    

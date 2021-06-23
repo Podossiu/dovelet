@@ -1,0 +1,12 @@
+n = int(raw_input())
+a = [0 for i in range(10001)]
+a[1] = 1
+count =2
+num = 0
+for i in range(2,n+1):
+    a[i] += a[i-1] + count
+    num += 1
+    if count == num:
+        count += 1
+        num = 0
+print n, a[n]

@@ -1,0 +1,14 @@
+n,k = map(int,raw_input().split())
+max_1 = 0
+for i in range(n,k+1):
+    count = 1
+    temp = i
+    while(temp != 1):
+        if (temp % 2 == 0):
+            temp /= 2
+        elif (temp % 2 == 1):
+            temp = temp*3+1
+        count+=1
+    if max_1 < count:
+        max_1 = count
+print max_1

@@ -1,0 +1,2 @@
+a,b,c = map(int, raw_input().split())
+print "%s" %("yes" if (a<b+c and b<a+c and c<a+b) else "no")

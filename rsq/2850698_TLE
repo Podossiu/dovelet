@@ -1,0 +1,6 @@
+n = int(raw_input())
+a = list(map(int,raw_input().split()))
+q = int(raw_input())
+for i in range(q):
+    s,e = map(int, raw_input().split())
+    print sum(a[s-1:e])

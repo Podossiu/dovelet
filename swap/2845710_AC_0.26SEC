@@ -1,0 +1,7 @@
+a, b = raw_input().split()
+a = int(a)
+b = int(b)
+a ^= b
+b ^= a
+a ^= b
+print "%d %d" %(a,b)

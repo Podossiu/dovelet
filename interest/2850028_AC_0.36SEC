@@ -1,0 +1,5 @@
+import math
+r,m,y = map(int,raw_input().split())
+for i in range(y):
+    m = (1+r/100.)*m
+print "%.0lf" %(math.floor(m))

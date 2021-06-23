@@ -1,0 +1,5 @@
+a,b,c = map(int,raw_input().split())
+if (c-a+b)/float(b) - (c-a+b)/b == 0:
+    print "%.0lf" %((c-a+b)/b)
+else :
+    print "X"

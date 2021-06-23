@@ -1,0 +1,5 @@
+a = list(map(int,raw_input().split()))
+total = 0
+for i in a:
+    total += (i*i)%10
+print total%10

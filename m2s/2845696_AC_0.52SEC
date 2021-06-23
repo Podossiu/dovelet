@@ -1,0 +1,2 @@
+a = int(raw_input())
+print "{} minutes is {} seconds.".format(a,a*60)

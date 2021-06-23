@@ -1,0 +1,2 @@
+a = int(input())
+print "%c" %( 'O' if (a >= 2000 and (a-2000)%8 == 0) else 'X')

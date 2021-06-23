@@ -1,0 +1,8 @@
+import sys
+a = list(map(int, raw_input().split()))
+for i in a:
+    if (i <= 168):
+        print "CRASH %d" %(i)
+        sys.exit()
+print "NO CRASH"
+

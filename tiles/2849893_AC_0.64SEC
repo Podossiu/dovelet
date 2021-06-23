@@ -1,0 +1,2 @@
+a,b = map(int,raw_input().split())
+print("The number of whole tiles is %d part tiles is %d" %((a/8)*(b/8),(b/8)*bool(a%8)+(a/8)*bool(b%8)+bool(a%8 and b%8)))

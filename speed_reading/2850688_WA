@@ -1,0 +1,15 @@
+n,k = map(int,raw_input().split())
+count = 0
+for i in range(k):
+    count = 0
+    temp = n
+    s,t,r = map(int, raw_input().split())
+    if (n > s*t):
+        count += (t+r) * (n/(s*t))
+        temp %= (s*t)
+    elif n == s*t:
+        print t
+        continue
+    count+= int(temp/float(s)+0.9)
+        
+    print count

@@ -1,0 +1,8 @@
+n= int(raw_input())
+exp = int(raw_input())
+a = list(map(int, raw_input().split()))
+total = 0
+for i in range(n):
+    if (a[i] > 0):
+        total += a[i] ** exp
+print total

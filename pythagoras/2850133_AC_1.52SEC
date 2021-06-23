@@ -1,0 +1,14 @@
+c = int(raw_input())
+iflag = False
+for i in range(c-1,c/2,-1):
+    a = c**2 - i**2
+    if float(a**0.5)%1==0:
+        iflag=True
+        break
+        
+
+    
+if iflag == True:
+    print("%d %d" %(a**0.5,i))
+else:
+    print("impossible")

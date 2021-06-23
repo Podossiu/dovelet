@@ -1,0 +1,32 @@
+a,b,c,d = map(int,raw_input().split())
+p,m,g = map(int,raw_input().split())
+if (p % (a+b) -a <= 0 and p %(a+b) != 0):
+    if (p % (c+d) -c <= 0 and p %(c+d) != 0):
+        print "both"
+    else:
+        print "one"
+else:
+    if (p % (c+d) -c <= 0 and p %(c+d) != 0):
+        print "one"
+    else:
+        print "none"
+if (m % (a+b) -a <= 0 and m %(a+b) != 0):
+    if (m % (c+d) -c <= 0 and m %(c+d) != 0):
+        print "both"
+    else:
+        print "one"
+else:
+    if (m % (c+d) -c <= 0 and m %(c+d) != 0):
+        print "one"
+    else:
+        print "none"
+if (g % (a+b) -a <= 0 and g %(a+b) != 0):
+    if (g % (c+d) -c <= 0 and g %(c+d) != 0):
+        print "both"
+    else:
+        print "one"
+else:
+    if (g % (c+d) -c <= 0 and g %(c+d) != 0):
+        print "one"
+    else:
+        print "none" 

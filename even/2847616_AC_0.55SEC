@@ -1,0 +1,6 @@
+import math
+a,b = map(int,raw_input().split())
+total = (b-a+1)-int(math.sqrt(b)) + int(math.sqrt(a))
+if math.sqrt(a) == int(math.sqrt(a)):
+    total -=1
+print total 
